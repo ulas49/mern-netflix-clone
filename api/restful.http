@@ -1,0 +1,36 @@
+@BASE_URL=http://localhost:3000
+
+GET {{BASE_URL}}/api/users
+
+
+
+###
+POST {{BASE_URL}}/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"ulas",
+    "email":"ulas@gmail.com",
+    "password":"test1234"
+  
+    
+     
+ 
+}
+
+###
+POST {{BASE_URL}}/api/auth/login
+Content-Type: application/json
+
+{
+   
+    "email":"ulas@gmail.com",
+    "password":"test1234"
+    
+    
+    
+    
+}
+
+### 
+DELETE {{BASE_URL}}/api/users/6431e1f8ba341fea31122f6c
