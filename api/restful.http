@@ -1,22 +1,33 @@
 @BASE_URL=http://localhost:3000
 
+GET {{BASE_URL}}/api/users/find/646a87b7e6e76a8a3a142974
+
+
+###
 GET {{BASE_URL}}/api/users
+
+###
+GET {{BASE_URL}}/api/users/stats
 
 
 
 ###
-POST {{BASE_URL}}/api/auth/register
+PUT {{BASE_URL}}/api/users/646a87b7e6e76a8a3a142974
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmE4N2I3ZTZlNzZhOGEzYTE0Mjk3NCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2ODQ3MDU0MzYsImV4cCI6MTY4NTEzNzQzNn0.yzR1jgPH2udnPDLaSQiyiIHmfDRwkEvFxz7fPs0ppwU
 
 {
-    "username":"ulas",
-    "email":"ulas@gmail.com",
-    "password":"test1234"
+    "username":"lastdeneme"
+   
   
-    
-     
+      
  
 }
+
+
+
+
+
 
 ###
 POST {{BASE_URL}}/api/auth/login
@@ -24,8 +35,23 @@ Content-Type: application/json
 
 {
    
-    "email":"ulas@gmail.com",
-    "password":"test1234"
+    "email":"deneme@gmail.com",
+    "password":"test123456"
+    
+    
+    
+    
+}
+
+###
+POST {{BASE_URL}}/api/auth/register
+Content-Type: application/json
+
+{
+   
+      "username":"ulasbaba",
+      "email":"ulas@gmail.com",
+      "password":"test1234"
     
     
     
@@ -33,4 +59,5 @@ Content-Type: application/json
 }
 
 ### 
-DELETE {{BASE_URL}}/api/users/6431e1f8ba341fea31122f6c
+DELETE {{BASE_URL}}/api/users/6469345c3d5af6dc831c1045
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNDVjM2Q1YWY2ZGM4MzFjMTA0NSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2ODQ3MDQyOTQsImV4cCI6MTY4NTEzNjI5NH0.GJ7mu_KuIQ9-_kyXxqOiIY4uTcoXlMgUWn-QTOa9cxM
